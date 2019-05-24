@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Flight code:</strong>
+  <%= @flight.flight_code %>
+</p>
+
+<p>
+  <strong>Sched:</strong>
+  <%= @flight.sched %>
+</p>
+
+<p>
+  <strong>From:</strong>
+  <%= @flight.from %>
+</p>
+
+<p>
+  <strong>To:</strong>
+  <%= @flight.to %>
+</p>
+
+
+<h2>Flight Price</h2>
+ <p>
+  <strong>Weekdays regular:</strong>
+  ¥<%= @flight_price.weekdays_regular %>
+</p>
+
+<p>
+  <strong>Weekdays reward:</strong>
+  ¥<%= @flight_price.weekdays_reward %>
+</p>
+
+<p>
+  <strong>Weekends regular:</strong>
+  ¥<%= @flight_price.weekends_regular %>
+</p>
+
+<p>
+  <strong>Weekends reward:</strong>
+  ¥<%= @flight_price.weekends_reward %>
+</p>
+
+
+
+
+<%= link_to 'Edit', edit_flight_path(@flight) %> |
+<%= link_to 'Back', flights_path %>

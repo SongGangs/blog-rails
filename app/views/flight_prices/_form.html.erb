@@ -1,0 +1,42 @@
+<%= form_with(model: flight_price, local: true) do |form| %>
+  <% if flight_price.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(flight_price.errors.count, "error") %> prohibited this flight_price from being saved:</h2>
+
+      <ul>
+      <% flight_price.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :weekdays_regular %>
+    <%= form.text_field :weekdays_regular %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weekdays_reward %>
+    <%= form.text_field :weekdays_reward %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weekends_regular %>
+    <%= form.text_field :weekends_regular %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weekends_reward %>
+    <%= form.text_field :weekends_reward %>
+  </div>
+
+  <div class="field">
+    <%= form.label :flight_code %>
+    <%= form.text_field :flight_code %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

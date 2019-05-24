@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  weekdays_regular: MyString
+  weekdays_reward: MyString
+  weekends_regular: MyString
+  weekends_reward: MyString
+  flight_code: 
+
+two:
+  weekdays_regular: MyString
+  weekdays_reward: MyString
+  weekends_regular: MyString
+  weekends_reward: MyString
+  flight_code: 
